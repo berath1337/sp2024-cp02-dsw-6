@@ -1,4 +1,30 @@
-main {
+body {
+  background-color: #dac0a3;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav {
+  background-color: #eadbc8;
+}
+
+.superNav {
+  font-size: 13px;
+}
+
+.srcbtn {
+  background-color: #102c57;
+}
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.main {
   background-color: #dac0a3;
   width: 95%;
   height: 100vh;
@@ -10,24 +36,32 @@ main {
   opacity: 30%;
 }
 
-a {
-  font-size: 14px;
-  font-weight: 700;
-}
-nav {
-  background-color: #eadbc8;
-}
-.superNav {
-  font-size: 13px;
-}
-.srcbtn {
-  background-color: #102c57;
+.list-group-item-action {
+  cursor: pointer;
 }
 
-.form-control {
-  outline: none !important;
-  box-shadow: none !important;
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.card-body {
+  background-color: #fff;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #102c57;
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+
+
 @media screen and (max-width: 540px) {
   .centerOnMobile {
     text-align: center;
