@@ -1,202 +1,134 @@
 *{
-    box-sizing: border-box;
-  }
-  body{
-     min-height:100vh;
-    
+  box-sizing: border-box;
+}
+body{
+   min-height:100vh;
   
-  }
 
-  /* Basic navigation bar styling */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: #333;
+}
+
+main {
+  
+  background-color: #c4a480;
+  width: 95%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 700;
+}
+nav {
+  background-color: #eadbc8;
+}
+.superNav {
+  font-size: 13px;
+}
+.srcbtn {
+  background-color: #102c57;
+}
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.salePromo {
+  height: 20vh;
+  background-color: red;
+}
+
+.carousel-img {
+  height: 185px;
+  width: 100%;
   overflow: hidden;
-  display: flex; 
-  align-items: center; 
 }
 
-nav ul li {
-  float: none; 
-}
-
-nav ul li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav ul li a:hover, .dropdown:hover .dropbtn {
-  background-color: #111;
-}
-
-/* Dropdown menu styling */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Search form styling */
-.search-form {
-  display: flex;
-  align-items: center;
-  padding: 15px 16px;
-  margin-left: auto; 
-}
-
-.search-form input[type="text"] {
-  padding: 6px;
-  margin-right: 6px;
-  border: none;
-  border-radius: 4px;
-}
-
-.search-form button {
-  padding: 6px 10px;
-  background-color: #555;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.search-form button:hover {
-  background-color: #111;
-}
-
-  
-  main {
-    
-    background-color: #c4a480;
-    width: 95%;
+.carousel-img img {
     height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  a {
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .salePromo {
-    height: 20vh;
-    background-color: red;
-  }
-  
-  .carousel-img {
-    height: 185px;
     width: 100%;
-    overflow: hidden;
-  }
+    object-fit: cover;
+}
+.mainPromoContainer {
   
-  .carousel-img img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-  }
-  .mainPromoContainer {
-    
-    
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 35% 65%;
-    gap: 1fr;
-    height: 80vh;
-  }
-  .mainPromo {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-content: center ;
-    background-color: #FEFAF6;
-    height: 80vh;
-    overflow: scroll;
-  }
-  .sidePromo {
-    background-color: #FEFAF6;
-    height: 80vh;
-    overflow: scroll;
-  }
-  .content {
-    
-    background-color: black;
-    width: 75%;
-    height: 50%;
-  }
-  #card{
-    background-color:#EADBC8;
-  }
-  #card-side{
-    background-color:#EADBC8;
-  }
-  footer{
-    background-color: #333;
-    padding: 0;
-    margin: 0;
-
-  }
-
-  @media screen and (max-width: 500px) {
-
-    .mainPromoContainer{
-      min-height:100vh;
-      display: block;
-    }
-    .salePromo{
-     
-      display: none;
-    }
   
-  .mainPromo{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    min-height:100vh;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 35% 65%;
+  gap: 1fr;
+  height: 80vh;
+}
+.mainPromo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
+  justify-content: space-around;
+  width: 100%;
+  align-content: center ;
+  background-color: #0066ff;
+  height: 80vh;
   overflow: scroll;
-    
-  }
-  .sidePromo{
+}
+.sidePromo {
+  background-color: rgb(255, 49, 49);
+  height: 80vh;
+  overflow: scroll;
+}
+.content {
+  
+  background-color: black;
+  width: 75%;
+  height: 50%;
+}
+.footer{
+  height: 50px;
+  background-color: yellow;
+  width:100%;
+ padding:0;
+ position: absolute ;
+justify-content: end;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .mainPromoContainer{
     min-height:100vh;
-    overflow: scroll;
+    display: block;
+  }
+  .salePromo{
    
+    display: none;
   }
 
+.mainPromo{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height:100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+overflow: scroll;
   
-  }
+}
+.sidePromo{
+  min-height:100vh;
+  overflow: scroll;
+ 
+}
+.footer{
+  height: 50px;
+  background-color: yellow;
+  width:100%;
+ padding:0;
+ position: fixed ;
+bottom: 0;
+}
+
+}

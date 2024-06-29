@@ -5,39 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechNest - Home</title>
-  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
   <header>
     
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Categories</a>
-          <div class="dropdown-content">
-            <a href="categories\blackGoods.html">Black Goods</a>
-            <a href="categories\whiteGoods.html">White Goods</a>
-                <a href="categories\it.html">IT</a>
-                <a href="categories\peripherals&accessories.html">Peripherals & Accessories</a>
-                <a href="categories\gaming.html">Gaming</a>
-                <a href="categories\components.html">Components</a>
-        <li>
-<div></div>
-        <li><a href="sales.html">Sales</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        
-          <form class="search-form" action="search.html" method="GET">
-            <input type="text" name="query" placeholder="Search...">
-            <button type="submit">Search</button>
-          </form>
-        </li>
-        </div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light p-3 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"
+          ><i class="fa-solid fa-shop me-2"></i> <strong>Technest</strong></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        </li>
-      </ul>
+        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control border-warning"
+              style="color: #7a7a7a"
+            />
+            <button class="srcbtn btn text-white">Search</button>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="ms-auto d-none d-lg-block">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-warning"
+                style="color: #7a7a7a"
+              />
+              <button class="srcbtn btn btn-warning text-white">Search</button>
+            </div>
+          </div>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-2 text-uppercase"
+                aria-current="page"
+                href="#"
+                >Sale</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="../html/category.html"
+                >Category</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase" href="../html/cart.html"
+                >Cart</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-2 text-uppercase active"
+                href="../html/contact.html"
+                ><i class="fa-solid fa-cart-shopping me-1"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
