@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sale</title>
     <link
@@ -11,11 +11,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/sale.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
   </head>
   <body>
     <!-- Nav bar starts here -->
-     
+
     <nav class="navbar navbar-expand-lg sticky-top navbar-light p-3 shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="./index.html"
@@ -64,7 +64,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="../html/category.html"
+              <a
+                class="nav-link mx-2 text-uppercase"
+                href="../html/category.html"
                 >Category</a
               >
             </li>
@@ -87,24 +89,122 @@
       </div>
     </nav>
 
-<!-- page start here -->
+<!-- Page content starts here -->
 
 
-    <main>
-      
-    </main>
+  <!-- Page content starts here -->
+  <main id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8">
+          <div id="cartContainer">
+            <!-- Cart items will be dynamically inserted here -->
+          </div>
+          
+          <!-- Continue Shopping and Checkout buttons -->
+          <div class="row my-4">
+            <div class="col-sm-6">
+              <a href="./index.html" class="btn btn-link text-muted">
+                <i class="mdi mdi-arrow-left me-1"></i> Continue Shopping
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <div class="text-sm-end mt-2 mt-sm-0">
+                <a href="ecommerce-checkout.html" class="btn btn-success">
+                  <i class="mdi mdi-cart-outline me-1"></i> Checkout
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    
-    <footer class="footer">
-      
-      <h1>FOOTER</h1>
+        <div class="col-xl-4">
+          <div class="mt-5 mt-lg-0 order-summary">
+            <div class="card border shadow-none">
+              <div class="card-header bg-transparent border-bottom py-3 px-4">
+                <h5 class="font-size-16 mb-0">Order Summary</h5>
+              </div>
+              <div class="card-body p-4 pt-2">
+                <div class="table-responsive">
+                  <table class="table mb-0">
+                    <tbody>
+                      <tr>
+                        <td>Sub Total :</td>
+                        <td class="text-end">$<span id="subTotal">0.00</span></td>
+                      </tr>
+                      <tr>
+                        <td>Shipping Charge :</td>
+                        <td class="text-end">$<span id="shippingCharge">0.00</span></td>
+                      </tr>
+                      <tr class="bg-light">
+                        <th>Total :</th>
+                        <td class="text-end">
+                          <span class="fw-bold">$<span id="total">0.00</span></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    </footer>
+  <footer class="footer bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Technest</h5>
+          <p>
+            Your one-stop shop for the latest and greatest in tech. From gadgets to home appliances, we have it all.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="../html/index.html" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a href="../html/contact.html" class="text-dark">Contact</a>
+            </li>
+            <li>
+              <a href="../html/sales.html" class="text-dark">Sale</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Facebook</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Twitter</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Instagram</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+      © 2024 Technest. All Rights Reserved.
+    </div>
+  </footer>
+    <script src="../js/cart.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/sale.js"></script>
   </body>
 </html>
