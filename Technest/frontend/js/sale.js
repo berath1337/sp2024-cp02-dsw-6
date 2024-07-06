@@ -4,7 +4,7 @@ let sidePromo = document.getElementById("sidePromo");
 let statsService = {
   showProdOnSaleMain: function (data) {
     data.forEach((product) => {
-      if (product.discount > 47.5) {
+      if (product.discount > 44) {
         contentPromo.innerHTML += `
           <div id="card" class="card" style="width: 24rem;">
             <div class="card-body">
