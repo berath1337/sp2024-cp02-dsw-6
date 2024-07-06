@@ -61,6 +61,7 @@ let productApiService = {
                 <img src="${product.product_img}" alt="" class="avatar-lg rounded">
               </div>
               <div class="flex-grow-1 align-self-center overflow-hidden">
+              <p class="text-muted mb-0">${product.product_description}</p>
               </div>
             </div>
             <div>
