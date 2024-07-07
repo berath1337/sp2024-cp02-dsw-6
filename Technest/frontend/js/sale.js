@@ -13,8 +13,8 @@ let statsService = {
               <p class="card-text">${product.product_description}</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"> Price on discount: ${uiService.discount(product.price, product.discount)}</li>
-              <li class="list-group-item"> Original price: ${product.price}</li>
+              <li class="list-group-item"> Price on discount: ${uiService.discount(product.price, product.discount)}$</li>
+              <li class="list-group-item"> Original price: ${product.price} $</li>
               <li class="list-group-item">Shipping cost: ${product.shipping_cost}</li>
               <li class="list-group-item">Shipping time: ${product.shipping_time}</li>
             </ul>
@@ -37,8 +37,8 @@ let statsService = {
               <img src="${product.product_img}" class="card-img-top" alt="...">
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"> Price: ${uiService.discount(product.price, product.discount)}</li>
-              <li class="list-group-item">Original price: ${product.price}</li>
+              <li class="list-group-item"> Price: ${uiService.discount(product.price, product.discount)} $</li>
+              <li class="list-group-item">Original price: ${product.price} $</li>
               <li class="list-group-item">Shipping cost: ${product.shipping_cost}</li>
               <li class="list-group-item">Shipping time: ${product.shipping_time}</li>
             </ul>
