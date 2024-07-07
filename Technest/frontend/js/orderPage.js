@@ -1,7 +1,7 @@
-const btn = document.getElementById("btn")
+const btn = document.getElementById("btn");
 
-
-function validateForm() {
+function validateForm(event) {
+    event.preventDefault(); // Prevent form submission
     const form = document.getElementById('orderForm');
     const fields = [
         { id: 'form6Example1', message: 'Please enter your first name.' },
@@ -22,11 +22,18 @@ function validateForm() {
             isValid = false;
         } else {
             input.classList.remove('is-invalid');
+            feedback.textContent = ''; // Clear feedback message
         }
     });
+
     if (!validatePhoneNumber()) {
         isValid = false;
     }
+
+    if (!validatenameLastname()) {
+        isValid = false;
+    }
+
     if (isValid) {
         alert('Order placed successfully!');
         form.reset();
@@ -42,11 +49,37 @@ function validateForm() {
             return false;
         } else {
             phoneInput.classList.remove('is-invalid');
+            feedback.textContent = ''; // Clear feedback message
             return true;
         }
-}
+    }
+
+    function validatenameLastname() {
+        const nameFields = [
+            { id: 'form6Example1', message: 'First name can only contain letters.' },
+            { id: 'form6Example2', message: 'Last name can only contain letters.' }
+        ];
+        const lettersOnlyPattern = /^[A-Za-z]+$/;
+        let isValid = true;
+
+        nameFields.forEach(field => {
+            const input = document.getElementById(field.id);
+            const feedback = input.nextElementSibling;
+            if (!lettersOnlyPattern.test(input.value)) {
+                input.classList.add('is-invalid');
+                feedback.textContent = field.message;
+                isValid = false;
+            } else {
+                input.classList.remove('is-invalid');
+                feedback.textContent = ''; // Clear feedback message
+            }
+        });
+
+        return isValid;
+    }
 }
 
-btn.addEventListener("click" , function(e){
+btn.addEventListener("click", function(e) {
     validateForm(e);
-})
+});
+
