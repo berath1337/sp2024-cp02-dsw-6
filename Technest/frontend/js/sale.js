@@ -1,6 +1,6 @@
 let contentPromo = document.getElementById("contentPromo");
 let sidePromo = document.getElementById("sidePromo");
-
+let notif = document.getElementById("notif")
 let statsService = {
   showProdOnSaleMain: function (data) {
     data.forEach((product) => {
@@ -78,7 +78,26 @@ document.addEventListener("click", function (e) {
     const productId = parseInt(target.getAttribute('data-product-id'), 10);
     addProductToCart(productId);
     console.log(`Button clicked for product ID: ${productId}`); // Debugging log
+    const toastId = `toast-${productId}`;
+    const toastHtml = `
+      <div id="${toastId}" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Technest</strong>
+          <small class="text-muted">Just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Product added to cart.
+        </div>
+      </div>
+    `;
+    notif.insertAdjacentHTML('beforeend', toastHtml);
+    const toastElement = document.getElementById(toastId);
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
   }
+ 
 });
 
 let uiService = {
