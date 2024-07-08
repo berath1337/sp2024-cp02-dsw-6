@@ -37,8 +37,10 @@ p, li {
 
 a {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
+  font-weight: 700;
 }
 
 nav {
