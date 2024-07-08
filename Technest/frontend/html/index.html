@@ -1,110 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sale</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/sale.css" />
-  </head>
-  <body>
-    <!-- Nav bar starts here -->
-     
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light p-3 shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html"
-          ><i class="fa-solid fa-shop me-2"></i> <strong>Technest</strong></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+  <title>Technest - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+  <!-- Nav bar starts here -->
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light p-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="../html/index.html"><i class="fa-solid fa-shop me-2"></i> <strong>Technest</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+        <div class="input-group">
+          <input type="text" class="form-control border-warning" style="color: #7a7a7a" />
+          <button class="srcbtn btn text-white">Search</button>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="ms-auto d-none d-lg-block">
           <div class="input-group">
-            <input
-              type="text"
-              class="form-control border-warning"
-              style="color: #7a7a7a"
-            />
-            <button class="srcbtn btn text-white">Search</button>
+            <input type="text" class="form-control border-warning" style="color: #7a7a7a" />
+            <button class="srcbtn btn btn-warning text-white">Search</button>
           </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <div class="ms-auto d-none d-lg-block">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control border-warning"
-                style="color: #7a7a7a"
-              />
-              <button class="srcbtn btn btn-warning text-white">Search</button>
-            </div>
-          </div>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link mx-2 text-uppercase"
-                aria-current="page"
-                href="../html/sales.html"
-                >Sale</a
-              >
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase" aria-current="page" href="../html/sales.html">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase" href="../html/category.html">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase" href="../html/cart.html">Cart</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase active" href="../html/contact.html"><i
+                class="fa-solid fa-cart-shopping me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="image-container">
+      
+      <img id="tech-nest-banner" src="/src/homepage.webp" usemap="#image-map" alt="TechNest Banner">
+      
+      <map name="image-map">
+         
+          <area id="shop-now-area" shape="rect" coords="0,0,0,0" alt="Shop Now" href="../html/category.html">
+      </map>
+
+  <footer class="footer bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Technest</h5>
+          <p>
+            Your one-stop shop for the latest and greatest in tech. From gadgets to home appliances, we have it all.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="../html/index.html" class="text-dark">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="../html/category.html"
-                >Category</a
-              >
+            <li>
+              <a href="../html/contact.html" class="text-dark">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2 text-uppercase" href="../html/cart.html"
-                >Cart</a
-              >
+            <li>
+              <a href="../html/sales.html" class="text-dark">Sale</a>
             </li>
+
           </ul>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link mx-2 text-uppercase active"
-                href="../html/contact.html"
-                ><i class="fa-solid fa-cart-shopping me-1"></i> Contact</a
-              >
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Facebook</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Twitter</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Instagram</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">LinkedIn</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="text-center p-3 bg-dark text-light">
+      © 2024 Technest. All Rights Reserved.
+    </div>
+  </footer>
 
-<!-- page start here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../js/index.js"></script>
+</body>
 
-
-    <main>
-       
-    </main>
-
-    
-    <footer class="footer">
-      
-      <h1>FOOTER</h1>
-
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/index.js"></script>
-  </body>
 </html>
