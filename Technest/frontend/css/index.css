@@ -56,7 +56,12 @@ a {
 nav {
   background-color: var(--sale-background);
 }
-
+.input-group{
+  display: none;
+}
+.srcbtn {
+  display: none;
+}
 .superNav {
   font-size: 13px;
 }

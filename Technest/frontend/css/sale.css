@@ -48,9 +48,11 @@ nav {
 .superNav {
   font-size: 13px;
 }
-
+.input-group{
+  display: none;
+}
 .srcbtn {
-  background-color: #102c57;
+  display: none;
 }
 
 .form-control {
